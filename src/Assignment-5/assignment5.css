@@ -1,87 +1,63 @@
 /* Our CSS file. */
+.container,.content{
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
 body{
-	background-color:#E0FFFF;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 300px;
+}
+.wrap{
+	height: 100%;
 }
 .card{
-	width: 100%;
+	display: flex;
+	flex:auto;
+	background-color: #fff;
+	max-width: 800px;
+	margin: 40px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.content1 div img{
-	width: 110%;
-	height: 110%;
-	margin-top: -90px;
-	margin-left: -35px;
-
-}
-.content2 div img{
-	width: 110%;
-	height: 105%;
-	margin-top: -70px;
-	margin-left: -35px;
-
-}
-.content1{
-	margin-top: 50px;
-	width: 100%;
-	height: 500px;
-	display:flex;
-	text-align: center;
-
-}
-.content2{
-	margin-top: 50px;
-
-	width: 100%;
-	height: 500px;
-	display:flex;
-	text-align: center;
-
-}
-
-.content1 div{
+.card-pic{
+	border-radius: 5px;
+	width: 250px;
 	
-    width: 50%;
-	background-color: white;
+	flex: 0 0 auto;
+	position: relative;
+	background-color: lightgreen;
+}
+.card-pic img{
+	position: absolute;
+	bottom: 3em;
+	left: 50%;
+	margin-left: -175px;
+	width: 350px;
+}
+.card-content{
+	padding: 3em 4em 2em;
+}
+.card-content a{
+	background-color: #8dc26f;
+	color: white;
+	padding: 15px 25px;
+	height: 50px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	display: inline-block;
+	border-radius: 25px;
+	text-decoration: none;
+	margin-top: 1.5em;
+	text-transform: uppercase;
 
-
-}
-.content2 div{
-	
-    width: 50%;
-	background-color: white;
-
-	margin-bottom: 50px;
-}
-.content1 .div1,.content2 .div1{
-	margin-left: 50px;
-	width: 40%;
-	background-color: rgb(221, 187, 143); 
-	padding-top: 50px;
-}
-.content1 .btn,.content2 .btn{
-	text-align: justify;
-	background-color: burlywood;
-	width:95px;
-	height:50px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: 100px;
-	border: 1px solid burlywood;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px; 
-	vertical-align: middle;
-	color:white
-}
-h1{
-	margin: 50px;
-	font-size: 50px;
-}
-p{
-	font-size: 30px;
-	text-align: justify;
-	padding-left: 65px;
-	padding-right: 65px;
-	padding-top: 35px;
 }
